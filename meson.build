@@ -8,3 +8,7 @@ gnome = import('gnome')
 
 subdir('src')
 subdir('tests')
+
+if get_option('doc')
+  subdir('doc')
+endif
