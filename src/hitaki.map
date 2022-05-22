@@ -10,6 +10,9 @@ HITAKI_0_1_0 {
 
     "hitaki_alsa_firewire_error_get_type";
     "hitaki_alsa_firewire_error_quark";
+
+    "hitaki_snd_unit_get_type";
+    "hitaki_snd_unit_new";
   local:
     *;
 };

@@ -1,5 +1,6 @@
 tests = [
   'hitaki-enum',
+  'snd-unit',
 ]
 
 envs = environment()
