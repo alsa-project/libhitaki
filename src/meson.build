@@ -13,6 +13,7 @@ sources = [
   'snd_unit.c',
   'snd_digi00x.c',
   'snd_dice.c',
+  'snd_efw.c',
 ]
 
 headers = [
@@ -24,6 +25,7 @@ headers = [
   'snd_unit.h',
   'snd_digi00x.h',
   'snd_dice.h',
+  'snd_efw.h',
 ]
 
 privates = [
