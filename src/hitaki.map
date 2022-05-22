@@ -31,6 +31,23 @@ HITAKI_0_1_0 {
 
     "hitaki_snd_efw_get_type";
     "hitaki_snd_efw_new";
+
+    "hitaki_snd_motu_register_dsp_parameter_get_type";
+    "hitaki_snd_motu_register_dsp_parameter_new";
+    "hitaki_snd_motu_register_dsp_parameter_get_mixer_source_gain";
+    "hitaki_snd_motu_register_dsp_parameter_get_mixer_source_pan";
+    "hitaki_snd_motu_register_dsp_parameter_get_mixer_source_flag";
+    "hitaki_snd_motu_register_dsp_parameter_get_mixer_source_paired_balance";
+    "hitaki_snd_motu_register_dsp_parameter_get_mixer_source_paired_width";
+    "hitaki_snd_motu_register_dsp_parameter_get_mixer_output_paired_volume";
+    "hitaki_snd_motu_register_dsp_parameter_get_mixer_output_paired_flag";
+    "hitaki_snd_motu_register_dsp_parameter_get_main_output_paired_volume";
+    "hitaki_snd_motu_register_dsp_parameter_get_headphone_output_paired_volume";
+    "hitaki_snd_motu_register_dsp_parameter_get_headphone_output_paired_assignment";
+    "hitaki_snd_motu_register_dsp_parameter_get_line_input_boost_flag";
+    "hitaki_snd_motu_register_dsp_parameter_get_line_input_nominal_level_flag";
+    "hitaki_snd_motu_register_dsp_parameter_get_input_gain_and_invert";
+    "hitaki_snd_motu_register_dsp_parameter_get_input_flag";
   local:
     *;
 };
