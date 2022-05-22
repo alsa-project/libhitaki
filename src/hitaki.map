@@ -58,6 +58,9 @@ HITAKI_0_1_0 {
 
     "hitaki_snd_motu_get_type";
     "hitaki_snd_motu_new";
+
+    "hitaki_tascam_protocol_get_type";
+    "hitaki_tascam_protocol_read_state";
   local:
     *;
 };
