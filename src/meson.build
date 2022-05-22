@@ -72,3 +72,6 @@ hitaki_gir = gnome.generate_gir(libhitaki,
   header: 'hitaki.h',
   install: true,
 )
+
+# For test.
+builddir = meson.current_build_dir()
