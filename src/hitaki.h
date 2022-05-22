@@ -24,5 +24,6 @@
 #include <snd_dice.h>
 #include <snd_efw.h>
 #include <snd_motu.h>
+#include <snd_tascam.h>
 
 #endif
