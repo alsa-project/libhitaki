@@ -10,4 +10,6 @@
 #include <hitaki_enum_types.h>
 #include <hitaki_enums.h>
 
+#include <alsa_firewire.h>
+
 #endif
