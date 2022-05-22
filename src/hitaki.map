@@ -13,6 +13,8 @@ HITAKI_0_1_0 {
 
     "hitaki_snd_unit_get_type";
     "hitaki_snd_unit_new";
+
+    "hitaki_quadlet_notification_get_type";
   local:
     *;
 };
