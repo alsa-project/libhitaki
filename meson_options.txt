@@ -1,0 +1,5 @@
+option('doc',
+  type: 'boolean',
+  value: false,
+  description: 'Generate API reference',
+)
