@@ -9,6 +9,7 @@ dependencies = [
 sources = [
   'alsa_firewire.c',
   'quadlet_notification.c',
+  'efw_protocol.c',
   'snd_unit.c',
   'snd_digi00x.c',
   'snd_dice.c',
@@ -19,6 +20,7 @@ headers = [
   'hitaki_enum_types.h',
   'alsa_firewire.h',
   'quadlet_notification.h',
+  'efw_protocol.h',
   'snd_unit.h',
   'snd_digi00x.h',
   'snd_dice.h',
@@ -27,6 +29,7 @@ headers = [
 privates = [
   'alsa_firewire_private.h',
   'alsa_firewire_private.c',
+  'efw_protocol_private.h',
 ]
 
 inc_dir = meson.project_name()

@@ -23,6 +23,11 @@ HITAKI_0_1_0 {
     "hitaki_snd_dice_new";
 
     "hitaki_efw_protocol_error_get_type";
+    "hitaki_efw_protocol_error_quark";
+
+    "hitaki_efw_protocol_get_type";
+    "hitaki_efw_protocol_request";
+    "hitaki_efw_protocol_transaction";
   local:
     *;
 };
