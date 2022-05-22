@@ -17,6 +17,7 @@ sources = [
   'snd_dice.c',
   'snd_efw.c',
   'snd_motu_register_dsp_parameter.c',
+  'snd_motu.c',
 ]
 
 headers = [
@@ -32,6 +33,7 @@ headers = [
   'snd_dice.h',
   'snd_efw.h',
   'snd_motu_register_dsp_parameter.h',
+  'snd_motu.h',
 ]
 
 privates = [

@@ -22,5 +22,6 @@
 #include <snd_digi00x.h>
 #include <snd_dice.h>
 #include <snd_efw.h>
+#include <snd_motu.h>
 
 #endif
