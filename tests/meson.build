@@ -2,6 +2,7 @@ tests = [
   'hitaki-enum',
   'snd-unit',
   'snd-digi00x',
+  'snd-dice',
 ]
 
 envs = environment()

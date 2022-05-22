@@ -11,6 +11,7 @@ sources = [
   'quadlet_notification.c',
   'snd_unit.c',
   'snd_digi00x.c',
+  'snd_dice.c',
 ]
 
 headers = [
@@ -20,6 +21,7 @@ headers = [
   'quadlet_notification.h',
   'snd_unit.h',
   'snd_digi00x.h',
+  'snd_dice.h',
 ]
 
 privates = [
