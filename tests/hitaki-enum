@@ -28,6 +28,7 @@ alsa_firewire_error_enumerations = (
     'IS_LOCKED',
     'IS_UNLOCKED',
     'IS_DISCONNECTED',
+    'WRONG_CLASS',
 )
 
 types = {

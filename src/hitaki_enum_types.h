@@ -38,6 +38,8 @@ typedef enum {
  * @HITAKI_ALSA_FIREWIRE_ERROR_IS_LOCKED:       The functionality of packet streaming is prohibited.
  * @HITAKI_ALSA_FIREWIRE_ERROR_IS_UNLOCKED:     The functionality of packet streaming is available.
  * @HITAKI_ALSA_FIREWIRE_ERROR_IS_DISCONNECTED: The sound card is disconnected.
+ * @HITAKI_ALSA_FIREWIRE_ERROR_WRONG_CLASS:     Mismatch between GObject class and the type of sound
+ *                                              unit.
  */
 typedef enum {
     HITAKI_ALSA_FIREWIRE_ERROR_FAILED = 0,
@@ -47,6 +49,7 @@ typedef enum {
     HITAKI_ALSA_FIREWIRE_ERROR_IS_LOCKED,
     HITAKI_ALSA_FIREWIRE_ERROR_IS_UNLOCKED,
     HITAKI_ALSA_FIREWIRE_ERROR_IS_DISCONNECTED,
+    HITAKI_ALSA_FIREWIRE_ERROR_WRONG_CLASS,
 } HitakiAlsaFirewireError;
 
 #endif

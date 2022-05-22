@@ -15,13 +15,14 @@ typedef struct {
     void (*handle_event)(HitakiAlsaFirewire *self, union snd_firewire_event *event, size_t length);
 } AlsaFirewireSource;
 
-const char *const alsa_firewire_error_msgs[7] = {
+const char *const alsa_firewire_error_msgs[8] = {
     [HITAKI_ALSA_FIREWIRE_ERROR_IS_OPENED] = "The instance is already associated to unit",
     [HITAKI_ALSA_FIREWIRE_ERROR_IS_NOT_OPENED] = "The instance is not associated to unit yet",
     [HITAKI_ALSA_FIREWIRE_ERROR_IS_USED] = "The ALSA HwDep character device is already used",
     [HITAKI_ALSA_FIREWIRE_ERROR_IS_LOCKED] = "The functionality of packet streaming is prohibited",
     [HITAKI_ALSA_FIREWIRE_ERROR_IS_UNLOCKED] = "The functionality of packet streamin is available",
     [HITAKI_ALSA_FIREWIRE_ERROR_IS_DISCONNECTED] = "The sound card is disconnected",
+    [HITAKI_ALSA_FIREWIRE_ERROR_WRONG_CLASS] = "Mismatch between GObject class and thetype of sound unit",
 };
 
 void alsa_firewire_class_override_properties(GObjectClass *gobject_class)

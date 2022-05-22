@@ -10,7 +10,7 @@
 #include <sys/ioctl.h>
 #include <errno.h>
 
-extern const char *const alsa_firewire_error_msgs[7];
+extern const char *const alsa_firewire_error_msgs[8];
 
 static inline void generate_alsa_firewire_error(GError **error, HitakiAlsaFirewireError code)
 {

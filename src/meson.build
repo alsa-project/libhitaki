@@ -10,6 +10,7 @@ sources = [
   'alsa_firewire.c',
   'quadlet_notification.c',
   'snd_unit.c',
+  'snd_digi00x.c',
 ]
 
 headers = [
@@ -18,6 +19,7 @@ headers = [
   'alsa_firewire.h',
   'quadlet_notification.h',
   'snd_unit.h',
+  'snd_digi00x.h',
 ]
 
 privates = [
