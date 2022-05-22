@@ -52,4 +52,44 @@ typedef enum {
     HITAKI_ALSA_FIREWIRE_ERROR_WRONG_CLASS,
 } HitakiAlsaFirewireError;
 
+/**
+ * HitakiEfwProtocolError:
+  * HITAKI_EFW_PROTOCOL_ERROR_OK:               The transaction finished successfully.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD:              The request or response includes invalid header.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_COMMAND:      The request includes invalid category or command.
+  * HITAKI_EFW_PROTOCOL_ERROR_COMM_ERR:         The transaction fails due to communication error.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_QUAD_COUNT:   The number of quadlets in transaction is invalid.
+  * HITAKI_EFW_PROTOCOL_ERROR_UNSUPPORTED:      The request is not supported.
+  * HITAKI_EFW_PROTOCOL_ERROR_TIMEOUT:          The transaction is canceled due to response timeout.
+  * HITAKI_EFW_PROTOCOL_ERROR_DSP_TIMEOUT:      The operation for DSP did not finish within timeout.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_RATE:         The request includes invalid value for sampling frequency.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_CLOCK:        The request includes invalid value for source of clock.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_CHANNEL:      The request includes invalid value for the number of channel.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_PAN:          The request includes invalid value for panning.
+  * HITAKI_EFW_PROTOCOL_ERROR_FLASH_BUSY:       The on-board flash is busy and not operable.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_MIRROR:       The request includes invalid value for mirroring channel.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_LED:          The request includes invalid value for LED.
+  * HITAKI_EFW_PROTOCOL_ERROR_BAD_PARAMETER:    The request includes invalid value of parameter.
+  *
+  * The enumerations to report status of response in Fireworks protocol.
+  */
+typedef enum {
+    HITAKI_EFW_PROTOCOL_ERROR_OK                = 0,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD               = 1,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_COMMAND       = 2,
+    HITAKI_EFW_PROTOCOL_ERROR_COMM_ERR          = 3,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_QUAD_COUNT    = 4,
+    HITAKI_EFW_PROTOCOL_ERROR_UNSUPPORTED       = 5,
+    HITAKI_EFW_PROTOCOL_ERROR_TIMEOUT           = 6,
+    HITAKI_EFW_PROTOCOL_ERROR_DSP_TIMEOUT       = 7,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_RATE          = 8,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_CLOCK         = 9,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_CHANNEL       = 10,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_PAN           = 11,
+    HITAKI_EFW_PROTOCOL_ERROR_FLASH_BUSY        = 12,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_MIRROR        = 13,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_LED           = 14,
+    HITAKI_EFW_PROTOCOL_ERROR_BAD_PARAMETER     = 15,
+} HitakiEfwProtocolError;
+
 #endif
