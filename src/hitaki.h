@@ -16,6 +16,7 @@
 #include <quadlet_notification.h>
 #include <efw_protocol.h>
 #include <motu_register_dsp.h>
+#include <motu_command_dsp.h>
 
 #include <snd_unit.h>
 #include <snd_digi00x.h>
