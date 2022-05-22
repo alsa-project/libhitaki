@@ -19,8 +19,20 @@ alsa_firewire_type_enumerations = (
     'MOTU',
     'FIREFACE',
 )
+
+alsa_firewire_error_enumerations = (
+    'FAILED',
+    'IS_OPENED',
+    'IS_NOT_OPENED',
+    'IS_USED',
+    'IS_LOCKED',
+    'IS_UNLOCKED',
+    'IS_DISCONNECTED',
+)
+
 types = {
     Hitaki.AlsaFirewireType: alsa_firewire_type_enumerations,
+    Hitaki.AlsaFirewireError: alsa_firewire_error_enumerations,
 }
 
 for obj, types in types.items():

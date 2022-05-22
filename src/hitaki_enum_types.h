@@ -26,4 +26,27 @@ typedef enum {
     HITAKI_ALSA_FIREWIRE_TYPE_FIREFACE,
 } HitakiAlsaFirewireType;
 
+/**
+ * HitakiAlsaFirewireError:
+ * @HITAKI_ALSA_FIREWIRE_ERROR_FAILED:          The system call fails.
+ * @HITAKI_ALSA_FIREWIRE_ERROR_IS_OPENED:       The instance is already associated to any ALSA HwDep
+ *                                              character device.
+ * @HITAKI_ALSA_FIREWIRE_ERROR_IS_NOT_OPENED:   The instance is not associated to any ALSA HwDep
+ *                                              character device yet.
+ * @HITAKI_ALSA_FIREWIRE_ERROR_IS_USED:         The ALSA HwDep character device is used by the other
+ *                                              process.
+ * @HITAKI_ALSA_FIREWIRE_ERROR_IS_LOCKED:       The functionality of packet streaming is prohibited.
+ * @HITAKI_ALSA_FIREWIRE_ERROR_IS_UNLOCKED:     The functionality of packet streaming is available.
+ * @HITAKI_ALSA_FIREWIRE_ERROR_IS_DISCONNECTED: The sound card is disconnected.
+ */
+typedef enum {
+    HITAKI_ALSA_FIREWIRE_ERROR_FAILED = 0,
+    HITAKI_ALSA_FIREWIRE_ERROR_IS_OPENED,
+    HITAKI_ALSA_FIREWIRE_ERROR_IS_NOT_OPENED,
+    HITAKI_ALSA_FIREWIRE_ERROR_IS_USED,
+    HITAKI_ALSA_FIREWIRE_ERROR_IS_LOCKED,
+    HITAKI_ALSA_FIREWIRE_ERROR_IS_UNLOCKED,
+    HITAKI_ALSA_FIREWIRE_ERROR_IS_DISCONNECTED,
+} HitakiAlsaFirewireError;
+
 #endif

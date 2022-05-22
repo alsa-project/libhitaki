@@ -7,6 +7,9 @@ HITAKI_0_1_0 {
     "hitaki_alsa_firewire_lock";
     "hitaki_alsa_firewire_unlock";
     "hitaki_alsa_firewire_create_source";
+
+    "hitaki_alsa_firewire_error_get_type";
+    "hitaki_alsa_firewire_error_quark";
   local:
     *;
 };

@@ -10,6 +10,10 @@ G_BEGIN_DECLS
 
 G_DECLARE_INTERFACE(HitakiAlsaFirewire, hitaki_alsa_firewire, HITAKI, ALSA_FIREWIRE, GObject);
 
+#define HITAKI_ALSA_FIREWIRE_ERROR       (hitaki_alsa_firewire_error_quark())
+
+GQuark hitaki_alsa_firewire_error_quark();
+
 struct _HitakiAlsaFirewireInterface {
     GTypeInterface iface;
 

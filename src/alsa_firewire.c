@@ -12,6 +12,16 @@
  */
 G_DEFINE_INTERFACE(HitakiAlsaFirewire, hitaki_alsa_firewire, G_TYPE_OBJECT)
 
+/**
+ * hitaki_alsa_firewire_error_quark:
+ *
+ * Return the [alias@GLib.Quark] for [struct@GLib.Error] with code in [enum@AlsaFirewireError]
+ * enumerations.
+ *
+ * Returns: A [alias@GLib.Quark].
+ */
+G_DEFINE_QUARK(hitaki-alsa-firewire-error-quark, hitaki_alsa_firewire_error)
+
 static void hitaki_alsa_firewire_default_init(HitakiAlsaFirewireInterface *iface)
 {
     /**
