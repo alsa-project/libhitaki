@@ -12,4 +12,6 @@
 
 #include <alsa_firewire.h>
 
+#include <snd_unit.h>
+
 #endif

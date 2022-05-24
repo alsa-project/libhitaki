@@ -8,15 +8,20 @@ dependencies = [
 
 sources = [
   'alsa_firewire.c',
+  'snd_unit.c',
 ]
 
 headers = [
   'hitaki.h',
   'hitaki_enum_types.h',
   'alsa_firewire.h',
+  'snd_unit.h',
 ]
 
-privates = []
+privates = [
+  'alsa_firewire_private.h',
+  'alsa_firewire_private.c',
+]
 
 inc_dir = meson.project_name()
 
