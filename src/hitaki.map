@@ -1,6 +1,12 @@
 HITAKI_0_1_0 {
   global:
     "hitaki_alsa_firewire_type_get_type";
+
+    "hitaki_alsa_firewire_get_type";
+    "hitaki_alsa_firewire_open";
+    "hitaki_alsa_firewire_lock";
+    "hitaki_alsa_firewire_unlock";
+    "hitaki_alsa_firewire_create_source";
   local:
     *;
 };
