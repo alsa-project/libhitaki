@@ -58,6 +58,9 @@ HITAKI_0_1_0 {
 
     "hitaki_motu_command_dsp_get_type";
     "hitaki_motu_command_dsp_read_float_meter";
+
+    "hitaki_snd_motu_get_type";
+    "hitaki_snd_motu_new";
   local:
     *;
 };

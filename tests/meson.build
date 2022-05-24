@@ -4,6 +4,7 @@ tests = [
   'snd-digi00x',
   'snd-dice',
   'snd-efw',
+  'snd-motu',
 ]
 
 envs = environment()
