@@ -19,6 +19,7 @@ sources = [
   'snd_dice.c',
   'snd_efw.c',
   'snd_motu.c',
+  'snd_tascam.c',
 ]
 
 headers = [
@@ -36,6 +37,7 @@ headers = [
   'snd_dice.h',
   'snd_efw.h',
   'snd_motu.h',
+  'snd_tascam.h',
 ]
 
 privates = [

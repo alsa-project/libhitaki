@@ -64,6 +64,9 @@ HITAKI_0_1_0 {
 
     "hitaki_tascam_protocol_get_type";
     "hitaki_tascam_protocol_read_state";
+
+    "hitaki_snd_tascam_get_type";
+    "hitaki_snd_tascam_new";
   local:
     *;
 };
