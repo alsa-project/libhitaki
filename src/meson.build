@@ -10,6 +10,7 @@ sources = []
 
 headers = [
   'hitaki.h',
+  'hitaki_enum_types.h',
 ]
 
 privates = []
