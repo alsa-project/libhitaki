@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
-#include "hitaki.h"
+#include "alsa_firewire_private.h"
 
 /**
  * HitakiAlsaFirewire:
@@ -68,7 +68,7 @@ static void hitaki_alsa_firewire_default_init(HitakiAlsaFirewireInterface *iface
      * The type of sound unit.
      */
     g_object_interface_install_property(iface,
-        g_param_spec_enum("unit-type", "unit-type",
+        g_param_spec_enum(UNIT_TYPE_PROP_NAME, UNIT_TYPE_PROP_NAME,
                           "The type of sound unit",
                           HITAKI_TYPE_ALSA_FIREWIRE_TYPE,
                           HITAKI_ALSA_FIREWIRE_TYPE_DICE,
@@ -80,7 +80,7 @@ static void hitaki_alsa_firewire_default_init(HitakiAlsaFirewireInterface *iface
      * The numeric identifier for sound card.
      */
     g_object_interface_install_property(iface,
-        g_param_spec_uint("card-id", "card-id",
+        g_param_spec_uint(CARD_ID_PROP_NAME, CARD_ID_PROP_NAME,
                           "The numeric identifier for sound card",
                           0, G_MAXUINT,
                           0,
@@ -92,7 +92,7 @@ static void hitaki_alsa_firewire_default_init(HitakiAlsaFirewireInterface *iface
      * The name of node device in Linux FireWire subsystem which owns the unit; e.g. `fw1`.
      */
     g_object_interface_install_property(iface,
-        g_param_spec_string("node-device", "node-device",
+        g_param_spec_string(NODE_DEVICE_PROP_NAME, NODE_DEVICE_PROP_NAME,
                             "The name of node device in Linux FireWire subsystem",
                             NULL,
                             G_PARAM_READABLE));
@@ -103,7 +103,7 @@ static void hitaki_alsa_firewire_default_init(HitakiAlsaFirewireInterface *iface
      * Whether the associated unit is locked or not to start packet streaming.
      */
     g_object_interface_install_property(iface,
-        g_param_spec_boolean("is-locked", "is-locked",
+        g_param_spec_boolean(IS_LOCKED_PROP_NAME, IS_LOCKED_PROP_NAME,
                              "Whether the associated unit is locked or not",
                              FALSE,
                              G_PARAM_READWRITE | G_PARAM_EXPLICIT_NOTIFY));
@@ -114,7 +114,7 @@ static void hitaki_alsa_firewire_default_init(HitakiAlsaFirewireInterface *iface
      * Global unique identifier for the node in IEEE 1394 bus.
      */
     g_object_interface_install_property(iface,
-        g_param_spec_uint64("guid", "guid",
+        g_param_spec_uint64(GUID_PROP_NAME, GUID_PROP_NAME,
                             "Global unique identifier for the node in IEEE 1394 bus.",
                             0, G_MAXUINT64, 0,
                             G_PARAM_READABLE));
@@ -127,7 +127,7 @@ static void hitaki_alsa_firewire_default_init(HitakiAlsaFirewireInterface *iface
      * [method@GObject.Object.unref] as quickly as possible to release ALSA hwdep character device.
      */
     g_object_interface_install_property(iface,
-        g_param_spec_boolean("is-disconnected", "is-disconnected",
+        g_param_spec_boolean(IS_DISCONNECTED_PROP_NAME, IS_DISCONNECTED_PROP_NAME,
                              "Whether the sound card is unavailable",
                              FALSE,
                              G_PARAM_READWRITE | G_PARAM_EXPLICIT_NOTIFY));
