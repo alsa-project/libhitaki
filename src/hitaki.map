@@ -51,6 +51,10 @@ HITAKI_0_1_0 {
     "hitaki_snd_motu_register_dsp_parameter_get_line_input_nominal_level_flag";
     "hitaki_snd_motu_register_dsp_parameter_get_input_gain_and_invert";
     "hitaki_snd_motu_register_dsp_parameter_get_input_flag";
+
+    "hitaki_motu_register_dsp_get_type";
+    "hitaki_motu_register_dsp_read_parameter";
+    "hitaki_motu_register_dsp_read_byte_meter";
   local:
     *;
 };
