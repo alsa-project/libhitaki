@@ -16,6 +16,9 @@ HITAKI_0_1_0 {
     "hitaki_snd_unit_new";
 
     "hitaki_quadlet_notification_get_type";
+
+    "hitaki_snd_digi00x_get_type";
+    "hitaki_snd_digi00x_new";
   local:
     *;
 };
