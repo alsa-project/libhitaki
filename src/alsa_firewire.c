@@ -12,6 +12,54 @@
  */
 G_DEFINE_INTERFACE(HitakiAlsaFirewire, hitaki_alsa_firewire, G_TYPE_OBJECT)
 
+/**
+ * hitaki_alsa_firewire_error_quark:
+ *
+ * Return the [alias@GLib.Quark] for [struct@GLib.Error] with code in Hitaki.AlsaFirewireError
+ * enumerations.
+ *
+ * Returns: A [alias@GLib.Quark].
+ */
+G_DEFINE_QUARK(hitaki-alsa-firewire-error-quark, hitaki_alsa_firewire_error)
+
+/**
+ * hitaki_alsa_firewire_error_to_label:
+ * @code: A Hitaki.AlsaFirewireError.
+ * @label: (out) (transfer none): The string label of error.
+ *
+ * Retrieve the string label of error from code.
+ */
+void hitaki_alsa_firewire_error_to_label(HitakiAlsaFirewireError code, const char **label)
+{
+    static const char *const labels[] = {
+        [HITAKI_ALSA_FIREWIRE_ERROR_FAILED] = "The operation fails due to some reasons",
+        [HITAKI_ALSA_FIREWIRE_ERROR_IS_OPENED] = "The instance is already associated to unit",
+        [HITAKI_ALSA_FIREWIRE_ERROR_IS_NOT_OPENED] = "The instance is not associated to unit yet",
+        [HITAKI_ALSA_FIREWIRE_ERROR_IS_USED] = "The ALSA HwDep character device is already used",
+        [HITAKI_ALSA_FIREWIRE_ERROR_IS_LOCKED] = "The functionality of packet streaming is prohibited",
+        [HITAKI_ALSA_FIREWIRE_ERROR_IS_UNLOCKED] = "The functionality of packet streamin is available",
+        [HITAKI_ALSA_FIREWIRE_ERROR_IS_DISCONNECTED] = "The sound card is disconnected",
+        [HITAKI_ALSA_FIREWIRE_ERROR_WRONG_CLASS] = "Mismatch between GObject class and thetype of sound unit",
+    };
+
+    switch (code) {
+    case HITAKI_ALSA_FIREWIRE_ERROR_FAILED:
+    case HITAKI_ALSA_FIREWIRE_ERROR_IS_OPENED:
+    case HITAKI_ALSA_FIREWIRE_ERROR_IS_NOT_OPENED:
+    case HITAKI_ALSA_FIREWIRE_ERROR_IS_USED:
+    case HITAKI_ALSA_FIREWIRE_ERROR_IS_LOCKED:
+    case HITAKI_ALSA_FIREWIRE_ERROR_IS_UNLOCKED:
+    case HITAKI_ALSA_FIREWIRE_ERROR_IS_DISCONNECTED:
+    case HITAKI_ALSA_FIREWIRE_ERROR_WRONG_CLASS:
+        break;
+    default:
+        code = HITAKI_ALSA_FIREWIRE_ERROR_FAILED;
+        break;
+    }
+
+    *label = labels[code];
+}
+
 static void hitaki_alsa_firewire_default_init(HitakiAlsaFirewireInterface *iface)
 {
     /**
