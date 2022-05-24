@@ -7,6 +7,7 @@ dependencies = [
 ]
 
 sources = [
+  'snd_motu_register_dsp_parameter.c',
   'alsa_firewire.c',
   'quadlet_notification.c',
   'efw_protocol.c',
@@ -19,6 +20,7 @@ sources = [
 headers = [
   'hitaki.h',
   'hitaki_enum_types.h',
+  'snd_motu_register_dsp_parameter.h',
   'alsa_firewire.h',
   'quadlet_notification.h',
   'efw_protocol.h',
