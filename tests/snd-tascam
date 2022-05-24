@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+from sys import exit
+from errno import ENXIO
+
+from helper import test
+
+import gi
+gi.require_version('Hitaki', '0.0')
+from gi.repository import Hitaki
+
+target = Hitaki.SndTascam()
+props = (
+    'unit-type',
+    'card-id',
+    'node-device',
+    'is-locked',
+    'guid',
+    'is-disconnected',
+)
+methods = (
+    'open',
+    'lock',
+    'unlock',
+    'create_source',
+    'new',
+    'read_state',
+)
+vmethods = (
+    'do_open',
+    'do_lock',
+    'do_unlock',
+    'do_create_source',
+    'do_read_state',
+    'do_changed',
+)
+signals = (
+    #'changed',
+)
+
+if not test(target, props, methods, vmethods, signals):
+    exit(ENXIO)

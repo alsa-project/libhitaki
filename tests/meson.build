@@ -5,6 +5,7 @@ tests = [
   'snd-dice',
   'snd-efw',
   'snd-motu',
+  'snd-tascam',
 ]
 
 envs = environment()
