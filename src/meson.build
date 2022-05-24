@@ -8,6 +8,7 @@ dependencies = [
 
 sources = [
   'alsa_firewire.c',
+  'quadlet_notification.c',
   'snd_unit.c',
 ]
 
@@ -15,6 +16,7 @@ headers = [
   'hitaki.h',
   'hitaki_enum_types.h',
   'alsa_firewire.h',
+  'quadlet_notification.h',
   'snd_unit.h',
 ]
 
