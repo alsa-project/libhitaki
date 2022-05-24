@@ -31,9 +31,31 @@ alsa_firewire_error_enumerations = (
     'WRONG_CLASS',
 )
 
+efw_protocol_error_enumerations = (
+    'OK',
+    'BAD',
+    'BAD_COMMAND',
+    'COMM_ERR',
+    'BAD_QUAD_COUNT',
+    'UNSUPPORTED',
+    'TIMEOUT',
+    'DSP_TIMEOUT',
+    'BAD_RATE',
+    'BAD_CLOCK',
+    'BAD_CHANNEL',
+    'BAD_PAN',
+    'FLASH_BUSY',
+    'BAD_MIRROR',
+    'BAD_LED',
+    'BAD_PARAMETER',
+    'INCOMPLETE',
+    'INVALID',
+)
+
 types = {
     Hitaki.AlsaFirewireType: alsa_firewire_type_enumerations,
     Hitaki.AlsaFirewireError: alsa_firewire_error_enumerations,
+    Hitaki.EfwProtocolError: efw_protocol_error_enumerations,
 }
 
 for obj, types in types.items():
