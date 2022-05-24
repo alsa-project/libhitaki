@@ -11,6 +11,7 @@
 #include <hitaki_enums.h>
 
 #include <alsa_firewire.h>
+#include <quadlet_notification.h>
 
 #include <snd_unit.h>
 
