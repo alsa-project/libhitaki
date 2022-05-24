@@ -15,5 +15,6 @@
 
 #include <snd_unit.h>
 #include <snd_digi00x.h>
+#include <snd_dice.h>
 
 #endif

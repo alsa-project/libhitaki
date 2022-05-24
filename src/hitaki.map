@@ -19,6 +19,9 @@ HITAKI_0_1_0 {
 
     "hitaki_snd_digi00x_get_type";
     "hitaki_snd_digi00x_new";
+
+    "hitaki_snd_dice_get_type";
+    "hitaki_snd_dice_new";
   local:
     *;
 };
