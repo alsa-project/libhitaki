@@ -31,6 +31,9 @@ HITAKI_0_1_0 {
     "hitaki_efw_protocol_transmit_request";
     "hitaki_efw_protocol_receive_response";
     "hitaki_efw_protocol_transaction";
+
+    "hitaki_snd_efw_get_type";
+    "hitaki_snd_efw_new";
   local:
     *;
 };

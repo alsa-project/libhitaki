@@ -3,6 +3,7 @@ tests = [
   'snd-unit',
   'snd-digi00x',
   'snd-dice',
+  'snd-efw',
 ]
 
 envs = environment()
