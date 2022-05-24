@@ -10,6 +10,8 @@
 #include <hitaki_enum_types.h>
 #include <hitaki_enums.h>
 
+#include <snd_motu_register_dsp_parameter.h>
+
 #include <alsa_firewire.h>
 #include <quadlet_notification.h>
 #include <efw_protocol.h>
