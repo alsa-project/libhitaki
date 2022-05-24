@@ -1,4 +1,6 @@
-tests = []
+tests = [
+  'hitaki-enum',
+]
 
 envs = environment()
 envs.append('LD_LIBRARY_PATH', builddir, separator : ':')

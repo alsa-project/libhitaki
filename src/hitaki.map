@@ -1,4 +1,6 @@
-HITAKI_0_0_0 {
+HITAKI_0_1_0 {
+  global:
+    "hitaki_alsa_firewire_type_get_type";
   local:
     *;
 };
