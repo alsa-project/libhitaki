@@ -14,5 +14,6 @@
 #include <quadlet_notification.h>
 
 #include <snd_unit.h>
+#include <snd_digi00x.h>
 
 #endif
