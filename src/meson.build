@@ -6,11 +6,14 @@ dependencies = [
   gobject,
 ]
 
-sources = []
+sources = [
+  'alsa_firewire.c',
+]
 
 headers = [
   'hitaki.h',
   'hitaki_enum_types.h',
+  'alsa_firewire.h',
 ]
 
 privates = []
