@@ -32,7 +32,7 @@ Repository
 Documentation
 =============
 
-- `<https://alsa-project.github.io/libhitaki-doc/>`_
+- `<https://alsa-project.github.io/gobject-introspection-docs/hitaki/>`_
 
 Dependencies
 ============

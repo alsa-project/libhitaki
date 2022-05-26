@@ -1,15 +1,22 @@
 [library]
 version = "@VERSION@"
-description = "libhitaki"
+description = "The library to operate ALSA HwDep character device for Audio and Music unit in IEEE 1394 bus"
 authors = "Takashi Sakamoto"
 license = "LGPL-3.0-or-later"
-website_url = "https://alsa-project.github.io/libhitaki-doc/"
-browse_url = "https://github.com/alsa-project/libhitaki"
+website_url = "https://alsa-project.github.io/gobject-introspection-docs/hitaki/"
+docs_url = "https://alsa-project.github.io/gobject-introspection-docs/hitaki/"
+browse_url = "https://github.com/alsa-project/libhitaki/"
 repository_url = "https://github.com/alsa-project/libhitaki.git"
+devhelp=true
+search_index=true
 
 dependencies = [
   "GLib-2.0",
   "GObject-2.0",
+]
+
+related = [
+  "Hinawa-3.0",
 ]
 
 [dependencies."GLib-2.0"]
@@ -21,6 +28,11 @@ docs_url = "https://docs.gtk.org/glib/"
 name = "GObject"
 description = "The base type system and object class"
 docs_url = "https://docs.gtk.org/gobject/"
+
+[related."Hinawa-3.0"]
+name = "Hinawa"
+description = "The library to operate Linux FireWire character device for IEEE 1394 asynchronous transaction"
+docs_url = "https://alsa-project.github.io/gobject-introspection-docs/hinawa"
 
 [source-location]
 base_url = "https://github.com/alsa-project/libhitaki/blob/master/"
