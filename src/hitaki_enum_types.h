@@ -2,6 +2,8 @@
 #ifndef __HITAKI_ENUM_TYPES_H__
 #define __HITAKI_ENUM_TYPES_H__
 
+G_BEGIN_DECLS
+
 /**
  * HitakiAlsaFirewireType:
  * @HITAKI_ALSA_FIREWIRE_TYPE_DICE:      The type of DICE ASIC.
@@ -97,5 +99,7 @@ typedef enum {
     HITAKI_EFW_PROTOCOL_ERROR_INCOMPLETE        = -2147483648,  /* = 0x80000000 */
     HITAKI_EFW_PROTOCOL_ERROR_INVALID           = -1,   /* = 0xffffffff */
 } HitakiEfwProtocolError;
+
+G_END_DECLS
 
 #endif
