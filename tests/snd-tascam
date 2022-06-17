@@ -11,6 +11,7 @@ from gi.repository import Hitaki
 
 target_type = Hitaki.SndTascam
 props = (
+    # From interface.
     'unit-type',
     'card-id',
     'node-device',
@@ -19,14 +20,16 @@ props = (
     'is-disconnected',
 )
 methods = (
+    'new',
+    # From interfaces.
     'open',
     'lock',
     'unlock',
     'create_source',
-    'new',
     'read_state',
 )
 vmethods = (
+    # From interfaces.
     'do_open',
     'do_lock',
     'do_unlock',
@@ -35,7 +38,8 @@ vmethods = (
     'do_changed',
 )
 signals = (
-    #'changed',
+    # From interface.
+    'changed',
 )
 
 if not test_object(target_type, props, methods, vmethods, signals):
