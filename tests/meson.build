@@ -12,6 +12,7 @@ tests = [
   'efw-protocol',
   'motu-register-dsp',
   'motu-command-dsp',
+  'tascam-protocol'
 ]
 
 envs = environment()
