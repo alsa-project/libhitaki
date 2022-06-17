@@ -9,6 +9,7 @@ tests = [
   'snd-motu-register-dsp-parameter',
   'alsa-firewire',
   'quadlet-notification',
+  'efw-protocol',
 ]
 
 envs = environment()
