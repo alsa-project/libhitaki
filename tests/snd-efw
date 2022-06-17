@@ -11,6 +11,7 @@ from gi.repository import Hitaki
 
 target_type = Hitaki.SndEfw
 props = (
+    # From interface.
     'unit-type',
     'card-id',
     'node-device',
@@ -19,16 +20,18 @@ props = (
     'is-disconnected',
 )
 methods = (
+    'new',
+    # From interfaces.
     'open',
     'lock',
     'unlock',
     'create_source',
-    'new',
     'transmit_request',
     'receive_response',
     'transaction',
 )
 vmethods = (
+    # From interfaces.
     'do_open',
     'do_lock',
     'do_unlock',
@@ -38,7 +41,8 @@ vmethods = (
     'do_responded',
 )
 signals = (
-    #'responded',
+    # From interface.
+    'responded',
 )
 
 if not test_object(target_type, props, methods, vmethods, signals):

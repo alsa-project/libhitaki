@@ -7,6 +7,7 @@ tests = [
   'snd-motu',
   'snd-tascam',
   'snd-motu-register-dsp-parameter',
+  'alsa-firewire',
 ]
 
 envs = environment()

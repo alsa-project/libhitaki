@@ -11,6 +11,7 @@ from gi.repository import Hitaki
 
 target_type = Hitaki.SndUnit
 props = (
+    # From interface.
     'unit-type',
     'card-id',
     'node-device',
@@ -19,13 +20,15 @@ props = (
     'is-disconnected',
 )
 methods = (
+    'new',
+    # From interface.
     'open',
     'lock',
     'unlock',
     'create_source',
-    'new',
 )
 vmethods = (
+    # From interface.
     'do_open',
     'do_lock',
     'do_unlock',

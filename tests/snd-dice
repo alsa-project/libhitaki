@@ -11,6 +11,7 @@ from gi.repository import Hitaki
 
 target_type = Hitaki.SndDice
 props = (
+    # From interface.
     'unit-type',
     'card-id',
     'node-device',
@@ -19,13 +20,15 @@ props = (
     'is-disconnected',
 )
 methods = (
+    'new',
+    # From interface.
     'open',
     'lock',
     'unlock',
     'create_source',
-    'new',
 )
 vmethods = (
+    # From interfaces.
     'do_open',
     'do_lock',
     'do_unlock',
@@ -33,7 +36,8 @@ vmethods = (
     'do_notified',
 )
 signals = (
-    #'notified',
+    # From interface.
+    'notified',
 )
 
 if not test_object(target_type, props, methods, vmethods, signals):

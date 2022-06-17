@@ -9,9 +9,8 @@ import gi
 gi.require_version('Hitaki', '0.0')
 from gi.repository import Hitaki
 
-target_type = Hitaki.SndMotu
+target_type = Hitaki.AlsaFirewire
 props = (
-    # From interface.
     'unit-type',
     'card-id',
     'node-device',
@@ -20,33 +19,18 @@ props = (
     'is-disconnected',
 )
 methods = (
-    'new',
-    # From interfaces.
     'open',
     'lock',
     'unlock',
     'create_source',
-    'read_parameter',
-    'read_byte_meter',
-    'read_float_meter',
 )
 vmethods = (
-    # From interfaces.
     'do_open',
     'do_lock',
     'do_unlock',
     'do_create_source',
-    'do_notified',
-    'do_read_parameter',
-    'do_read_byte_meter',
-    'do_changed',
-    'do_read_float_meter',
 )
-signals = (
-    # From interfaces.
-    'notified',
-    'changed',
-)
+signals = ()
 
 if not test_object(target_type, props, methods, vmethods, signals):
     exit(ENXIO)
