@@ -10,6 +10,7 @@ tests = [
   'alsa-firewire',
   'quadlet-notification',
   'efw-protocol',
+  'motu-register-dsp',
 ]
 
 envs = environment()
