@@ -9,7 +9,7 @@ import gi
 gi.require_version('Hitaki', '0.0')
 from gi.repository import Hitaki
 
-target = Hitaki.SndDigi00x()
+target_type = Hitaki.SndDigi00x
 props = (
     'unit-type',
     'card-id',
@@ -36,5 +36,5 @@ signals = (
     #'notified',
 )
 
-if not test(target, props, methods, vmethods, signals):
+if not test(target_type, props, methods, vmethods, signals):
     exit(ENXIO)
