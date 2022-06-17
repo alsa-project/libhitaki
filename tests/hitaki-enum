@@ -3,7 +3,7 @@
 from sys import exit
 from errno import ENXIO
 
-from helper import test_object
+from helper import test_enums
 
 import gi
 gi.require_version('Hitaki', '0.0')
@@ -58,8 +58,6 @@ types = {
     Hitaki.EfwProtocolError: efw_protocol_error_enumerations,
 }
 
-for obj, types in types.items():
-    for t in types:
-        if not hasattr(obj, t):
-            print('Enumerator {0} is not produced.'.format(t))
+for target_type, enumerations in types.items():
+    if not test_enums(target_type, enumerations):
             exit(ENXIO)
