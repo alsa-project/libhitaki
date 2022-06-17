@@ -6,6 +6,7 @@ tests = [
   'snd-efw',
   'snd-motu',
   'snd-tascam',
+  'snd-motu-register-dsp-parameter',
 ]
 
 envs = environment()
