@@ -8,6 +8,7 @@ tests = [
   'snd-tascam',
   'snd-motu-register-dsp-parameter',
   'alsa-firewire',
+  'quadlet-notification',
 ]
 
 envs = environment()
