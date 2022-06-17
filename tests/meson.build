@@ -11,6 +11,7 @@ tests = [
   'quadlet-notification',
   'efw-protocol',
   'motu-register-dsp',
+  'motu-command-dsp',
 ]
 
 envs = environment()
