@@ -2,7 +2,7 @@
 The libhitaki project
 =====================
 
-2022/05/26
+2022/06/30
 Takashi Sakamoto
 
 Introduction
@@ -18,7 +18,7 @@ libhitaki does the work instead.
 I design the library for userspace applications to operate ALSA HwDep character device for
 specific functions implemented in ALSA drivers for Audio and Music unit in IEEE 1394 bus.
 
-The latest release is `0.1.0 <https://github.com/alsa-project/libhitaki/tags/v0.1.0>`_.
+The latest release is `0.1.1 <https://github.com/alsa-project/libhitaki/tags/v0.1.1>`_.
 
 License
 =======
