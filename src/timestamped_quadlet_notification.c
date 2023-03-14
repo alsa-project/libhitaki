@@ -28,7 +28,7 @@ static void hitaki_timestamped_quadlet_notification_default_init(HitakiTimestamp
     g_signal_new("notified-at",
                  G_TYPE_FROM_INTERFACE(iface),
                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,
-                 0,
+                 G_STRUCT_OFFSET(HitakiTimestampedQuadletNotificationInterface, notified_at),
                  NULL, NULL,
                  hitaki_sigs_marshal_VOID__UINT_UINT,
                  G_TYPE_NONE, 2, G_TYPE_UINT, G_TYPE_UINT);

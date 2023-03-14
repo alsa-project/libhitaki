@@ -12,7 +12,9 @@ from gi.repository import Hitaki
 target_type = Hitaki.TimestampedQuadletNotification
 props = ()
 methods = ()
-vmethods = ()
+vmethods = (
+    'do_notified_at',
+)
 signals = (
     'notified-at',
 )
