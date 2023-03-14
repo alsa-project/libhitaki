@@ -21,6 +21,7 @@ sources = [
   'snd_efw.c',
   'snd_motu.c',
   'snd_tascam.c',
+  'snd_fireface.c',
 ]
 
 headers = [
@@ -40,6 +41,7 @@ headers = [
   'snd_efw.h',
   'snd_motu.h',
   'snd_tascam.h',
+  'snd_fireface.h',
 ]
 
 privates = [
