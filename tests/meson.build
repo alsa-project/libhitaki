@@ -6,6 +6,7 @@ tests = [
   'snd-efw',
   'snd-motu',
   'snd-tascam',
+  'snd-fireface',
   'snd-motu-register-dsp-parameter',
   'alsa-firewire',
   'quadlet-notification',

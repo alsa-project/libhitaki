@@ -26,5 +26,6 @@
 #include <snd_efw.h>
 #include <snd_motu.h>
 #include <snd_tascam.h>
+#include <snd_fireface.h>
 
 #endif
