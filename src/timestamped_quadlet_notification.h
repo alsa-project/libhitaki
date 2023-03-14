@@ -12,6 +12,16 @@ G_DECLARE_INTERFACE(HitakiTimestampedQuadletNotification, hitaki_timestamped_qua
 
 struct _HitakiTimestampedQuadletNotificationInterface {
     GTypeInterface iface;
+
+    /**
+     * HitakiQuadletNotificationInterface::notified_at:
+     * @self: A [iface@QuadletNotification]
+     * @message: A quadlet message in notification.
+     * @tstamp: The isochronous cycle at which the request arrived.
+     *
+     * Class closure for the [signal@QuadletNotification::notified-at] signal.
+     */
+    void (*notified_at)(HitakiTimestampedQuadletNotification *self, guint message, guint tstamp);
 };
 
 G_END_DECLS
