@@ -2,7 +2,7 @@
 The libhitaki project
 =====================
 
-2022/06/30
+2023/03/14
 Takashi Sakamoto
 
 Introduction
@@ -18,13 +18,13 @@ libhitaki does the work instead.
 I design the library for userspace applications to operate ALSA HwDep character device for
 specific functions implemented in ALSA drivers for Audio and Music unit in IEEE 1394 bus.
 
-The latest release is `0.1.1 <https://github.com/alsa-project/libhitaki/tags/v0.1.1>`_.
+The latest release is `0.2.0 <https://github.com/alsa-project/libhitaki/tags/v0.2.0>`_.
 
 License
 =======
 
-Licensed under GNU Lesser General Public License version 3 or later, including UAPI header of ALSA
-firewire stack licensed under GNU General Public License version 2.0.
+Released under GNU Lesser General Public License version 3 or later, including UAPI header of ALSA
+firewire stack released under GNU General Public License version 2.0.
 
 Repository
 ==========
