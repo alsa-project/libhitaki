@@ -14,6 +14,7 @@
 
 #include <alsa_firewire.h>
 #include <quadlet_notification.h>
+#include <timestamped_quadlet_notification.h>
 #include <efw_protocol.h>
 #include <motu_register_dsp.h>
 #include <motu_command_dsp.h>
