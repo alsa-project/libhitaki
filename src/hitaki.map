@@ -70,3 +70,8 @@ HITAKI_0_1_0 {
   local:
     *;
 };
+
+HITAKI_0_2_0 {
+  global:
+    "hitaki_timestamped_quadlet_notification_get_type";
+} HITAKI_0_1_0;

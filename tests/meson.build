@@ -9,6 +9,7 @@ tests = [
   'snd-motu-register-dsp-parameter',
   'alsa-firewire',
   'quadlet-notification',
+  'timestamped-quadlet-notification',
   'efw-protocol',
   'motu-register-dsp',
   'motu-command-dsp',
