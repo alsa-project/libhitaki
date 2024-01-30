@@ -57,7 +57,7 @@ How to build and install
 
 Build and install ::
 
-    $ meson (--prefix=directory-to-install) build-directory
+    $ meson setup (--prefix=directory-to-install) build-directory
     $ meson compile -C build-directory
     $ meson install -C build-directory
 
@@ -72,7 +72,7 @@ How to refer document
 
 ::
 
-    $ meson --prefix=directory-to-install -D doc=true build-directory
+    $ meson setup --prefix=directory-to-install -D doc=true build-directory
     $ meson install -C build-directory
     $ xdg-open directory-to-install/share/doc/hitaki/index.html
 
