@@ -2,7 +2,7 @@
 The libhitaki project
 =====================
 
-2023/03/14
+2024/02/16
 Takashi Sakamoto
 
 Introduction
@@ -23,7 +23,7 @@ The latest release is `0.2.0 <https://github.com/alsa-project/libhitaki/tags/v0.
 License
 =======
 
-Released under GNU Lesser General Public License version 3 or later, including UAPI header of ALSA
+Released under GNU Lesser General Public License version 2.1 or later, including UAPI header of ALSA
 firewire stack released under GNU General Public License version 2.0.
 
 Repository
