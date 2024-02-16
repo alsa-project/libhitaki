@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: LGPL-3.0-or-later
+// SPDX-License-Identifier: LGPL-2.1-or-later
 #ifndef __HITAKI_TIMESTAMPED_QUADLET_NOTIFICATION_H__
 #define __HITAKI_TIMESTAMPED_QUADLET_NOTIFICATION_H__
 
