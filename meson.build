@@ -1,5 +1,5 @@
 project('hitaki', 'c',
-  version: '0.2.0',
+  version: '0.2.1',
   license: 'LGPL-2.1-or-later',
   meson_version: '>= 0.46.0',
 )
