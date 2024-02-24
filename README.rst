@@ -81,7 +81,7 @@ Supplemental information for language bindings
 
 * PyGObject `<https://pygobject.readthedocs.io/>`_ is a dynamic loader for libraries compatible
   with g-i.
-* hitaki-rs `<https://github.com/alsa-project/hitaki-rs/>`_ includes creates to use these
+* hitaki-rs `<https://github.com/alsa-project/hitaki-rs/>`_ includes crates to use these
   libraries.
 
 About Hitaki
